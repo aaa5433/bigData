@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+plt.rcParams['font.family'] = 'DejaVu Sans'
+plt.rcParams['axes.unicode_minus'] = False
+
 st.set_page_config(page_title="제주 아쿠아플라넷 관람객 분석", layout="wide")
 
 st.title("🐬 제주 아쿠아플라넷 관람객 분석")
