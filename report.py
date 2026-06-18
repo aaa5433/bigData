@@ -20,13 +20,13 @@ st.dataframe(df.head())
 col1, col2, col3 = st.columns(3)
 
 with col1:
-st.metric("총 관람객 수", len(df))
+    st.metric("총 관람객 수", len(df))
 
 with col2:
-st.metric("평균 관람시간", f"{df['관람시간(분)'].mean():.1f}분")
+    st.metric("평균 관람시간", f"{df['관람시간(분)'].mean():.1f}분")
 
 with col3:
-st.metric("평균 결제금액", f"{df['결제금액(원)'].mean():,.0f}원")
+    st.metric("평균 결제금액", f"{df['결제금액(원)'].mean():,.0f}원")
 
 # 성별 관람객 수
 
